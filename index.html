@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js" defer></script>
+</head>
+<body>
+    <div class="result"></div>
+    <div class="current-player">
+        <span class="common">Player Turn <span id="cur-plr"></span></span>
+    </div>
+    <div class="score">
+        <table>
+            <th colspan="2">Score</th>
+            <tr>
+                <td>x</td>
+                <td><span id="sX">0</span></td>
+            </tr>
+            <tr>
+                <td>0</td>
+                <td><span id="sO">0</span></td>
+            </tr>
+            <tr>
+                <td>Draw</td>
+                <td><span id="sD">0</span></td>
+            </tr>
+        </table>
+    </div>
+    <div id="game"></div>
+    <button class="new-game">New Game</button>
+</body>
+</html>
