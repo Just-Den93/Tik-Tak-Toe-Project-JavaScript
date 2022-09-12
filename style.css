@@ -10,7 +10,7 @@ body{
     position: relative;
 }
 
-.result {
+.status-text {
     color: green;
     font-weight: bold;
     font-size: 40px;
@@ -18,7 +18,7 @@ body{
     margin-bottom: 20px;
 }
 
-.current-player {
+/* .current-player {
     position: absolute;
     display: flex;
     justify-content: center;
@@ -29,7 +29,7 @@ body{
     height: 50px;
     padding: 5px;
     outline: 1px solid black;
-}
+} */
 
 .common {
     display: flex;
@@ -55,7 +55,7 @@ body{
 
 .score table {
     border-collapse: collapse;
-    width: 150px;
+    width: 170px;
 }
 
 .score table, .score th, .score td {
@@ -90,6 +90,7 @@ body{
 }
 
 .new-game {
+    display: none;
     cursor: pointer;
     border: none;
     color: white;
