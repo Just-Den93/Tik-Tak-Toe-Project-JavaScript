@@ -1,0 +1,110 @@
+body{
+    user-select: none;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Roboto', sans-serif;
+    background: #ededed;
+    position: relative;
+}
+
+.status-text {
+    color: green;
+    font-weight: bold;
+    font-size: 40px;
+    height: 50px;
+    margin-bottom: 20px;
+}
+
+/* .current-player {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    left: 50px;
+    background: lightgray;
+    font-size: 30px;
+    width: 220px;
+    height: 50px;
+    padding: 5px;
+    outline: 1px solid black;
+} */
+
+.common {
+    display: flex;
+    align-items: center;
+}
+
+#cur-plr {
+    font-weight: bold;
+    color:green;
+    font-size: 50px;
+    margin-left: 10px;
+}
+
+.score {
+    position: absolute;
+    right: 50px;
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+    background: lightgray;
+    /* outline: 1px solid black; */
+}
+
+.score table {
+    border-collapse: collapse;
+    width: 170px;
+}
+
+.score table, .score th, .score td {
+    border: 1px solid #000;
+    box-sizing: border-box;
+    padding: 5px;
+    text-align: center;
+}
+
+#game {
+    cursor: pointer;
+    width: 360px;
+    height: 360px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    outline: 1px solid black;
+}
+
+.block {
+    display: flex;
+    justify-content: center;
+    width: 120px;
+    height: 120px;
+    max-height: 120px;
+    float: left;
+    border: 1px solid black;
+    box-sizing: border-box;
+    line-height: 50px;
+    align-items: center;
+    font-size: 80px;
+}
+
+.new-game {
+    display: none;
+    cursor: pointer;
+    border: none;
+    color: white;
+    background: green;
+    padding: 10px 16px;
+    margin-top: 20px;
+    font-size: 20px;
+    border-radius: 5px;
+}
+
+.active {
+    background: rgba(0,255, 0, 0.5);
+}
+
+.negative {
+    background: rgba(255, 99, 71, 0.5);
+}
